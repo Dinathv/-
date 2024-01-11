@@ -25,11 +25,11 @@ if (isset($_POST['uname']) && isset($_POST['password'])
 		header("Location: signup.php?error=Требуется логин&$user_data");
 	    exit();
 	}else if(empty($pass)){
-        header("Location: signup.php?error=Требуется пороль&$user_data");
+        header("Location: signup.php?error=Требуется пароль&$user_data");
 	    exit();
 	}
 	else if(empty($re_pass)){
-        header("Location: signup.php?error=Требуется повтор пороля&$user_data");
+        header("Location: signup.php?error=Требуется повтор пароля&$user_data");
 	    exit();
 	}
 
@@ -61,7 +61,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])
            	 header("Location: signup.php?success=Ваша учетная запись успешно создана");
 	         exit();
            }else {
-	           	header("Location: signup.php?error=произошла неизвестная ошибка&$user_data");
+	           	header("Location: signup.php?error=Произошла неизвестная ошибка&$user_data");
 		        exit();
            }
 		}
