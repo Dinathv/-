@@ -18,7 +18,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 		header("Location: index.php?error=Требуется логин");
 	    exit();
 	}else if(empty($pass)){
-        header("Location: index.php?error=Требуется пороль");
+        header("Location: index.php?error=Требуется пароль");
 	    exit();
 	}else{
 		
