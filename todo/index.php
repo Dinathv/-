@@ -13,8 +13,8 @@
      	<label>Логин</label>
      	<input type="text" name="uname" placeholder="Введите логин"><br>
 
-     	<label>Пороль</label>
-     	<input type="password" name="password" placeholder="Введите пороль"><br>
+     	<label>Пароль</label>
+     	<input type="password" name="password" placeholder="Введите пароль"><br>
 
      	<button type="submit">Вход</button>
           <a href="signup.php" class="ca">Создать аккаунт</a>
