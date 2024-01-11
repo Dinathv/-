@@ -40,15 +40,15 @@
           <?php }?>
 
 
-     	<label>Пороль</label>
+     	<label>Пароль</label>
      	<input type="password" 
                  name="password" 
-                 placeholder="Придумайте пороль"><br>
+                 placeholder="Придумайте пароль"><br>
 
-          <label>Повторите пороль</label>
+          <label>Повторите пароль</label>
           <input type="password" 
                  name="re_password" 
-                 placeholder="Повторите пороль"><br>
+                 placeholder="Повторите пароль"><br>
 
      	<button type="submit">Зарегистрироваться</button>
           <a href="index.php" class="ca">Есть аккаунт?</a>
