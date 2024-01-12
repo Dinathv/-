@@ -11,30 +11,12 @@ if (isset($_SESSION['id'])) {
 	$result= $stmt->fetchAll();
 	$nRows = $conn->query($sql)->rowCount(); 
 	if ($result && $nRows> 0) {
-	    echo '<div class="modal" tabindex="-1" role="dialog" id="historyModal">';
-	    echo '    <div class="modal-dialog" role="document">';
-	    echo '        <div class="modal-content p-5">';
-	    echo '            <h1 class="h3 mb-3 fw-normal">Прошлая история</h1>';
-	    echo '                 <ol>';
+	    echo '<div class="modal" tabindex="-1" role="dialog" id="saveModal">';
 		for ($i = 0; $i < ($nRows); $i++) {
-		    echo '<li>'.$result[$i]['history'].'</li>';
-		}
-	    echo '                 </ol>';
-	    echo '        </div>';
-	    echo '    </div>';
-	    echo '</div>';
-
-	} else {
-	echo '<div class="modal" tabindex="-1" role="dialog" id="NohistoryModal">';
-	echo '    <div class="modal-dialog" role="document">';
-	echo '        <div class="modal-content p-5">';
-	echo '            <h1 class="h3 mb-3 fw-normal">Прошлая история</h1>';
-	echo "            Ваша история пуста";
-	echo '        </div>';
-	echo '    </div>';
-	echo '</div>';
+		    echo '<li>'.$result[$i]['save'].'</li>';
+		} 
+		echo '</div>';
 	}
-	
 }
 exit();
 ?>
