@@ -26,25 +26,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
           <input type="text" class="header__search" placeholder="Поиск" />
         </form>
           <div draggable="true" class="movies"></div>
-          <!-- <div class="item" draggable="true">Фильм 1</div>
-          <div class="item" draggable="true">Фильм 2</div>
-          <div class="item" draggable="true">Фильм 3</div>
-          <div class="item" draggable="true">Фильм 4</div>
-          <div class="item" draggable="true">Фильм 5</div>
-          <div class="item" draggable="true">Фильм 6</div> -->
         </div>
         <div class="column" id="watching">
           <h2>Просматривает</h2>
           <div draggable="true" class="movies"></div>
-          <div class="item" draggable="true"></div>
-          <div class="item" draggable="true">Фильм 34</div>
         </div>
         <div class="column" id="watched">
           <h2>Посмотрел</h2>
           <div draggable="true" class="movies"></div>
-          <div class="item" draggable="true"></div>
-          <div class="item" draggable="true">Фильм 55</div>
-          <div class="item" draggable="true">Фильм 8</div>
         </div>
 
  
